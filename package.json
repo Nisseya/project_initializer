@@ -1,0 +1,34 @@
+{
+  "name": "project-initializer",
+  "displayName": "Project Initializer Marp DWA",
+  "description": "Initialise un projet Markdown conforme à l'entreprise en un clic",
+  "version": "0.0.1",
+  "publisher": "nisseya",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.initialiserProjet"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.initialiserProjet",
+        "title": "Créer un projet Markdown"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.5.5",
+    "unzipper": "^0.10.11"
+  },
+  "dependencies": {}
+}
